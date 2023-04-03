@@ -24,5 +24,7 @@ module BlogPdp
     config.generators do |g|
       g.template_engine :slim
     end
+
+    config.mailer_sender = 'no-reply@example.com'
   end
 end
