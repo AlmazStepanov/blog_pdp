@@ -1,7 +1,17 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/*'
+
 require:
   - rubocop-capybara
   - rubocop-rails
   - rubocop-rspec
+
+Bundler/OrderedGems:
+  Enabled: true
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30
   Enabled: true
 Gemspec/DevelopmentDependencies: # new in 1.44
