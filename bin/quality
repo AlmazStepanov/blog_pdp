@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -e
+
+bin/rubocop
+
+bin/slim-lint app/views
